@@ -56,9 +56,8 @@ int main(int argc, char const *argv[])
     
     while (str[pos]) {
         long p = 1;
-        for (int i = pos; i > pos-13; i--) {
+        for (int i = pos; i > pos-13; i--)
             p *= str[i] - '0';
-        }
         if (p > num)
             num = p;
         pos++;

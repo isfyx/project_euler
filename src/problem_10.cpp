@@ -20,7 +20,6 @@ int main(int argc, char **argv) {
                 goto skip;
             c = c->next;
         }
-        printf("%d\n", i);
         tail->next = new IntCell({i, nullptr});
         tail = tail->next;
         len++;
